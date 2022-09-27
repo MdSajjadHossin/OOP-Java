@@ -48,6 +48,18 @@ class Pen{
          System.out.println(name + " " + age);
      }
 }
+
+class Shape{
+    public void area(){
+        System.out.println("Prints the area");
+    }
+}
+class Triangle extends Shape{
+    public void area(int length, int height){
+        System.out.println(1/2*length*height);
+    }
+}
+
 public class OOPS{
     public static void main(String[] args) {
         // Pen pen1 = new Pen();
