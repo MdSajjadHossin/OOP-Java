@@ -29,11 +29,24 @@ class Pen{
         }
     }
 
-    Student(String name,  int age){
-        this.name = name;
-        this.age = age;
+//    Student(String name,  int age){
+//        this.name = name;
+//        this.age = age;
+//
+//
+//    }
 
-    }
+     public void studentInfo(String name){
+         System.out.println(name);
+     }
+
+     public void studentInfo(int age){
+         System.out.println(age);
+     }
+
+     public void studentInfo(String name, int age){
+         System.out.println(name + " " + age);
+     }
 }
 public class OOPS{
     public static void main(String[] args) {
@@ -52,11 +65,11 @@ public class OOPS{
         
         // pen2.Color();
 
-        Student student = new Student("Sajjad", 24);
+        Student student = new Student();
 
-        // student.name = "Md Sajjad Hossin";
-        // student.age = 24;
+         student.name = "Md Sajjad Hossin";
+         student.age = 24;
 
-        student.studentInfo();
+        student.studentInfo(student.name, student.age);
     }
 }
